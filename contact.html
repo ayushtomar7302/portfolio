@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Ayush Tomar</title>
+
+    <meta name="description"
+        content="Contact Ayush Tomar using the accessible contact form.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">
+        Skip to Main Content
+    </a>
+
+    <header>
+
+        <h1>Ayush Tomar</h1>
+
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="main-content">
+
+        <section aria-labelledby="contact-heading">
+
+            <h2 id="contact-heading">Contact Me</h2>
+
+            <form action="#" method="post" aria-label="Contact Form">
+
+                <div>
+
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        autocomplete="name">
+
+                </div>
+
+                <div>
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        aria-describedby="email-help">
+
+                    <small id="email-help">
+                        Enter a valid email address.
+                    </small>
+
+                </div>
+
+                <div>
+
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required></textarea>
+
+                </div>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>© 2026 Ayush Tomar</p>
+
+    </footer>
+
+</body>
+
+</html>
